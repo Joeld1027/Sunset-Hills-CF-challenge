@@ -89,7 +89,6 @@ const App = () => {
 						<div style={{ padding: '10px' }}>
 							<Button
 								onClick={() => setArrayData(randomHeights())}
-								size='small'
 								content='Random'
 								color='violet'
 							/>
