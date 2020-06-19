@@ -23,15 +23,16 @@ const ArrayInputs = ({ arrayData, setArrayData }) => {
 
 	return (
 		<Form
-			style={{
-				width: '60%',
-				display: 'flex',
-				flexDirection: 'column',
-				margin: 'auto auto',
-			}}
+			className='form-style'
 			widths={'equal'}
 			onSubmit={handleCalculate}
 		>
+			<Header
+				className='headerText'
+				textAlign='center'
+				as='h2'
+				content='Building sunset visibility calculator.'
+			/>
 			<Header
 				className='headerText'
 				textAlign='center'
@@ -114,7 +115,7 @@ const ArrayInputs = ({ arrayData, setArrayData }) => {
 			</Form.Group>
 			<Header>
 				{' '}
-				<Button content='Calculate' color='violet' />
+				<Button size='big' content='Calculate' color='violet' />
 			</Header>
 		</Form>
 	);

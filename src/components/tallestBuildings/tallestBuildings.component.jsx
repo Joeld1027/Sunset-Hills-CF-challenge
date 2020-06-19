@@ -92,11 +92,19 @@ const TallBuildingList = ({ setArrayData, arrayData }) => {
 	const [answerCards, setAnswerCards] = useState();
 
 	return (
-		<Grid stackable centered style={{ margin: '4em 0' }}>
+		<Grid
+			stackable
+			centered
+			style={{
+				margin: '4em 0',
+				backgroundColor: 'rgba(0,0,0, 0.2)',
+				padding: '10px',
+			}}
+		>
 			<Grid.Row>
 				<CardAnswers answerCards={answerCards} />
 			</Grid.Row>
-			<Grid.Row style={{ margin: '2em 0' }}>
+			<Grid.Row style={{ margin: '1em 0' }}>
 				<Header
 					className='headerText'
 					as='h1'
@@ -148,15 +156,10 @@ const TallBuildingList = ({ setArrayData, arrayData }) => {
 				</Grid.Row>
 
 				<Grid.Column width={16}>
-					<Header
-						textAlign='center'
-						as='h1'
-						className='headerText'
-						content='(Select six buildings.)'
-					/>
 					<Header textAlign='center'>
 						{' '}
 						<Button
+							size='big'
 							disabled={!isDisable}
 							onClick={() => {
 								let answerCardsArray = tallestBuildings.filter(
@@ -180,6 +183,12 @@ const TallBuildingList = ({ setArrayData, arrayData }) => {
 							color='violet'
 						/>
 					</Header>
+					<Header
+						textAlign='center'
+						as='h3'
+						className='headerText'
+						content='(Select six buildings.)'
+					/>
 				</Grid.Column>
 			</Grid.Row>
 		</Grid>

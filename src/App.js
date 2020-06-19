@@ -113,7 +113,9 @@ const App = () => {
 							as='h1'
 							textAlign='center'
 						>
-							{` Filtered Array [ ${orderedArray.toString()} ]`}
+							{` Filtered Array [ ${orderedArray
+								.join(', ')
+								.toString()} ]`}
 						</Header>
 
 						<BarChart arrayData={arrayData} />

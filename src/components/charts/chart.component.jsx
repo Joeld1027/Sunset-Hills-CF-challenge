@@ -61,6 +61,7 @@ const BarChart = ({ arrayData }) => {
 									yAxes: [
 										{
 											ticks: {
+												fontSize: 14,
 												fontColor: '#fff',
 												suggestedMax: Math.max(...arrayData),
 												min: 0,
@@ -70,6 +71,7 @@ const BarChart = ({ arrayData }) => {
 									xAxes: [
 										{
 											ticks: {
+												fontSize: 14,
 												fontColor: '#fff',
 												min: 0,
 												max: 8,

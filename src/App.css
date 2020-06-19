@@ -7,8 +7,8 @@
 }
 
 .App .answer {
-	margin: 5em 0 3em 0;
-	background-color: rgba(0, 0, 0, 0.1);
+	margin: 4em 0 2em 0;
+	background-color: rgba(0, 0, 0, 0.2);
 	text-shadow: 2px 2px 0 black;
 }
 
@@ -20,4 +20,17 @@
 .building-pagination {
 	padding: 5px;
 	margin: 2em 0;
+}
+
+.ui.form .inline.field > :first-child,
+.ui.form .inline.fields .field > :first-child {
+	color: #fff;
+}
+
+.form-style {
+	background-color: rgba(0, 0, 0, 0.2);
+	padding: 20px 40px;
+	display: flex;
+	flex-direction: column;
+	margin: auto auto;
 }
