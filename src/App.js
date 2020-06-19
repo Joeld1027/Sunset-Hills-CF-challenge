@@ -41,6 +41,32 @@ const App = () => {
 
 	return (
 		<div className='App'>
+			<Header textAlign='center'>
+				<Button.Group color='violet'>
+					<Button
+						icon='github'
+						content={
+							<a
+								style={{ color: '#fff' }}
+								href='https://github.com/Joeld1027'
+							>
+								Github
+							</a>
+						}
+					/>
+					<Button
+						icon='linkedin'
+						content={
+							<a
+								style={{ color: '#fff' }}
+								href='https://www.linkedin.com/in/joel-infante-10953a93/7'
+							>
+								LinkedIn
+							</a>
+						}
+					/>
+				</Button.Group>
+			</Header>
 			<Container>
 				<Segment basic padded textAlign='center'>
 					<Header
