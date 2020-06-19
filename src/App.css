@@ -1,0 +1,23 @@
+.App {
+	background-image: url('./SunsetHillChallengePixelOreos6.18.20..png');
+	background-repeat: no-repeat;
+	background-size: cover;
+
+	/* background-color: #1b1c1d; */
+}
+
+.App .answer {
+	margin: 5em 0 3em 0;
+	background-color: rgba(0, 0, 0, 0.1);
+	text-shadow: 2px 2px 0 black;
+}
+
+.headerText {
+	color: #ffb2ff !important;
+	text-shadow: 2px 2px 0 black !important;
+}
+
+.building-pagination {
+	padding: 5px;
+	margin: 2em 0;
+}
